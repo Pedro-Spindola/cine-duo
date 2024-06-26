@@ -27,7 +27,6 @@ function Filmes(){
                                 <label>Primeiro Gênero: </label>
                                 <select className={styles.select}>
                                     <option className={styles.option} disabled selected>
-                                        Primeiro Gênero.
                                     </option>
                                     <option className={styles.option} value="acao">Ação</option>
                                     <option className={styles.option} value="comedia">Comédia</option>
@@ -38,7 +37,6 @@ function Filmes(){
                                 <label>Segundo Gênero: </label>
                                 <select className={styles.select}>
                                     <option className={styles.option} disabled selected>
-                                        Segundo Gênero.
                                     </option>
                                     <option className={styles.option} value="acao">Ação</option>
                                     <option className={styles.option} value="comedia">Comédia</option>

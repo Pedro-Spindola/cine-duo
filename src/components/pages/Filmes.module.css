@@ -103,6 +103,11 @@
     background-color: var(--color-off-1);
 }
 
+.select::placeholder{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
 .topico{
     display: flex;
     flex-wrap: wrap;

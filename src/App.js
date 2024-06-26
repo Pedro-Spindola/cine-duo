@@ -7,6 +7,8 @@ import Container from './components/layout/Container'
 import Navbar from './components/layout/NavBar'
 import Footer from './components/layout/Footer'
 
+
+
 function App() {
   return (
     <Router>
