@@ -1,0 +1,62 @@
+@import url('./Cores.css');
+.tituloH2{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow:  2px 2px 6px var(--color-sombra);
+}
+
+.table .th{
+    background-color: var(--color-principal-2);
+    font-size: 15px;
+    font-weight: 400;
+    height: 28px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-secundaria-2);
+    color: var(--color-principal-1);
+}
+
+.table .td{
+    background-color: var(--color-off-1);
+    font-size: 14px;
+    font-weight: 400;
+    height: 26px;
+    text-align: center;
+    border-left: 1px solid var(--color-sombra);
+    border-right: 1px solid var(--color-sombra);
+}
+
+.table .th:nth-child(1), .table .td:nth-child(1) {
+    width: 10%; /* Número */
+}
+
+.table .th:nth-child(2), .table .td:nth-child(2) {
+    width: 70%; /* Nome */
+}
+
+.table .th:nth-child(3), .table .td:nth-child(3),
+.table .th:nth-child(4), .table .td:nth-child(4) {
+    width: 10%; /* Nota */
+}
+.btnEditar,
+.btnApagar{
+    margin: 4px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+}
+
+.btnEditar img,
+.btnApagar img{
+    padding: 2px;
+    width: 100%;
+}

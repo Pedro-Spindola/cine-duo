@@ -1,0 +1,178 @@
+.main{
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    background-color: var(--color-white);
+}
+
+.section{
+    width: 70%;
+    margin-left: 20px;
+}
+
+.sectionList{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.sectionList .container{
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--color-off-1);
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.section .container{
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--color-off-1);
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.boxLista{
+    width: 100%;
+}
+
+.section .container .boxDados{
+    width: 100%;
+}
+.inputDados{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+.boxDados1,
+.boxDados2{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputDados h2{
+    width: 100%;
+}
+
+.inputDados label{
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.inputDados input{
+    width: 60%;
+    border-style: none;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    padding: 2px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.inputDados input:focus{
+    outline: none;
+    border-color: var(--color-principal-1);
+    background-color: var(--color-principal-2);
+    border-radius: 4px;
+}
+
+.inputDados input::placeholder{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.select{
+    width: 60%;
+    border-style: none;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    padding: 2px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.select:focus {
+    outline: none;
+    border: 1px solid var(--color-principal-1);
+}
+
+.select .option{
+    background-color: var(--color-off-1);
+}
+
+.topico{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.topico h2{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.topico .dadosTopico1,
+.topico .dadosTopico2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.topico .dadosTopico1 label,
+.topico .dadosTopico2 label{
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.topico .dadosTopico1 input,
+.topico .dadosTopico2 input{
+    width: 60%;
+    border-style: none;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    padding: 2px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.topico .dadosTopico1 input:focus,
+.topico .dadosTopico2 input:focus{
+    outline: none;
+    border-color: var(--color-principal-1);
+    background-color: var(--color-principal-2);
+    border-radius: 4px;
+}
+
+.topico .dadosTopico1 input::placeholder,
+.topico .dadosTopico2 input::placeholder{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.lineOpcoes{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.btnOpcoes{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-principal-1);
+    color: var(--color-principal-2);
+    box-shadow:  0px 2px 6px var(--color-grey);
+    transition: background-color 1s ease-in-out, color 1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btnOpcoes:hover
+{
+    background-image: linear-gradient(to right bottom, #a1acbd, #8b99ae, #75879f, #607590, #4a6381, #3e5877, #324e6c, #254462, #203d59, #1b3650, #173048, #12293f);
+    box-shadow:  2px 2px 4px var(--color-principal-1);
+}

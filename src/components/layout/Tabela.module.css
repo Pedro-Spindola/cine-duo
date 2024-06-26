@@ -1,0 +1,70 @@
+@import url('./Cores.css');
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow:  2px 2px 6px var(--color-sombra);
+}
+
+.table .th{
+    background-color: var(--color-principal-1);
+    font-size: 15px;
+    font-weight: 400;
+    height: 40px;
+    text-align: center;
+    border: 1px solid var(--color-principal-1);
+    border-bottom: 2px solid var(--color-secundaria-2);
+    color: var(--color-off-1);
+}
+
+.table .td{
+    background-color: var(--color-off-1);
+    font-size: 14px;
+    font-weight: 400;
+    height: 26px;
+    text-align: center;
+    border-left: 1px solid var(--color-sombra);
+    border-right: 1px solid var(--color-sombra);
+}
+
+.table .th:nth-child(1), .table .td:nth-child(1) {
+    width: 3%; /* Número */
+}
+
+.table .th:nth-child(2), .table .td:nth-child(2) {
+    width: 30%; /* Nome */
+}
+
+.table .th:nth-child(3), .table .td:nth-child(3) {
+    width: 7%; /* Ano */
+}
+
+.table .th:nth-child(4), .table .td:nth-child(4) {
+    width: 9%; /* 1º Gênero */
+}
+
+.table .th:nth-child(5), .table .td:nth-child(5) {
+    width: 9%; /* 2º Gênero */
+}
+
+.table .th:nth-child(6), .table .td:nth-child(6),
+.table .th:nth-child(7), .table .td:nth-child(7),
+.table .th:nth-child(8), .table .td:nth-child(8),
+.table .th:nth-child(9), .table .td:nth-child(9),
+.table .th:nth-child(10), .table .td:nth-child(10),
+.table .th:nth-child(11), .table .td:nth-child(11),
+.table .th:nth-child(12), .table .td:nth-child(12),
+.table .th:nth-child(13), .table .td:nth-child(13),
+.table .th:nth-child(14), .table .td:nth-child(14),
+.table .th:nth-child(15), .table .td:nth-child(15) {
+    width: 3%; /* Notas */
+
+}
+
+.table .th:nth-child(16), .table .td:nth-child(16){
+    width: 4%; /* Média */
+}
+
+.table .th:nth-child(17), .table .td:nth-child(17) {
+    width: 8%; /* Média */
+}

@@ -1,0 +1,47 @@
+@import url('../layout/Cores.css');
+
+.main{
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    background-color: var(--color-white);
+}
+
+.section{
+    width: 80%;
+    margin-right: 10px;
+}
+
+.aside{
+    width: 20%;
+    margin-left: 10px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--color-off-1);
+}
+
+.boxContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.boxTabela, .boxTop{
+    width: 100%;
+    padding: 20px;
+}
+
+.h2Titulos{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+    .aside{
+        display: none;
+    }
+}

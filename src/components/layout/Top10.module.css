@@ -1,0 +1,55 @@
+@import url('./Cores.css');
+
+.select{
+    width: 100%;
+    border-style: none;
+    margin-bottom: 10px;
+    height: 36px;
+}
+
+.select:focus {
+    outline: none;
+    border: 2px solid var(--color-secundaria-2);
+}
+
+.select .option{
+    background-color: var(--color-off-1);
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow:  2px 2px 6px var(--color-sombra);
+}
+
+.table .th{
+    background-color: var(--color-principal-2);
+    font-size: 15px;
+    font-weight: 400;
+    height: 28px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-secundaria-2);
+    color: var(--color-principal-1);
+}
+
+.table .td{
+    background-color: var(--color-off-1);
+    font-size: 14px;
+    font-weight: 400;
+    height: 26px;
+    text-align: center;
+    border-left: 1px solid var(--color-sombra);
+    border-right: 1px solid var(--color-sombra);
+}
+
+.table .th:nth-child(1), .table .td:nth-child(1) {
+    width: 15%; /* Número */
+}
+
+.table .th:nth-child(2), .table .td:nth-child(2) {
+    width: 65%; /* Nome */
+}
+
+.table .th:nth-child(3), .table .td:nth-child(3) {
+    width: 20%; /* Nota */
+}

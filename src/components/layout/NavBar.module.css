@@ -1,0 +1,77 @@
+@import url('Cores.css');
+
+/*
+:root{
+    --color-principal-1: rgb(44, 77, 110);
+    --color-secundaria-1: rgb(161, 172, 189);
+    --color-principal-2: rgb(107, 61, 77);
+    --color-secundaria-2: rgb(160, 109, 126);
+    --color-grey: rgb(109, 120, 136);
+    --color-white: rgb(242, 242, 242);
+    --color-black: rgb(0, 0, 0);
+}
+*/
+
+.navegation{
+    background-color: var(--color-principal-1);
+    height: 90px;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+}
+
+.navMenu{
+    width: 100%;
+    align-content: center;
+}
+
+.ulClass{
+    display: flex;
+    min-width: 100%;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.ulClass li{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 100px;
+    
+}
+
+.ulClass img{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.ulClass li a{
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+.ulClass li a:hover{
+    color: var(--color-secundaria-2);
+    transition: color 0.4s ease-in-out;
+    border-bottom: 1px solid var(--color-secundaria-2);
+    border-radius: 2px;
+}
+
+.navMobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .navMenu li{
+        display: none;
+    }
+
+    .ulClass img{
+        display: flex;
+    }
+}

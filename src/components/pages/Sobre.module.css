@@ -1,0 +1,36 @@
+@import url('../layout/Cores.css');
+
+.main{
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    background-color: var(--color-white);
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--color-off-1);
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.boxSobre{
+    width: 100%;
+}
+
+.titulo{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 20px 20px;
+}
+
+.texto h3{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 60px;
+}
