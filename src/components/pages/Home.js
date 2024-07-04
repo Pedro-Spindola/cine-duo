@@ -4,6 +4,7 @@ import Tabela from '../layout/Tabela'
 import Top10 from '../layout/Top10'
 
 function Home(){
+
     return (
         <main className={styles.main}>
             <section className={styles.section}>

@@ -1,0 +1,43 @@
+@import url('./Cores.css');
+
+.td{
+    background-color: var(--color-off-1);
+    font-size: 14px;
+    font-weight: 400;
+    height: 26px;
+    text-align: center;
+    border-left: 1px solid var(--color-sombra);
+    border-right: 1px solid var(--color-sombra);
+}
+
+.td:nth-child(1) {
+    width: 10%; /* Número */
+}
+
+.td:nth-child(2) {
+    width: 70%; /* Nome */
+    text-align: start;
+    padding-left: 10px;
+}
+
+.td:nth-child(3),
+.td:nth-child(4) {
+    width: 10%; /* Nota */
+}
+
+.btnEditar,
+.btnApagar{
+    margin: 4px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+}
+
+.btnEditar img,
+.btnApagar img{
+    padding: 2px;
+    width: 100%;
+}

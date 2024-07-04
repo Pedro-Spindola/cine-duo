@@ -1,7 +1,28 @@
+import { useState, useEffect } from 'react'
 import styles from './Tabela.module.css'
-import imgEstrelas from '../../img/star.solid.svg'
+import LerFilme from './LerFilme'
 
 function Tabela(){
+
+    const [meusFilmes, setMeusFilmes] = useState([])
+    const anoAtual = new Date().getFullYear();
+
+    useEffect(() => {
+        fetch('http://localhost:5000/meusFilmes', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+
+        .then(resp => resp.json())
+        .then(data => {
+            setMeusFilmes(data)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+    }, []);
 
     return(
         <table className={styles.table}>
@@ -26,44 +47,12 @@ function Tabela(){
                 </tr>
             </thead>
             <tbody>
-                <tr className={styles.tr}>
-                    <td className={styles.td}>1</td>
-                    <td className={styles.td}>Bad Boys</td>
-                    <td className={styles.td}>2024</td>
-                    <td className={styles.td}>Ação</td>
-                    <td className={styles.td}>Comedia</td>
-                    <td className={styles.td}>8</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>8</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>9,5</td>
-                    <td className={styles.td}></td>
-                </tr>
-                <tr className={styles.tr}>
-                    <td className={styles.td}>1</td>
-                    <td className={styles.td}>Bad Boys</td>
-                    <td className={styles.td}>2024</td>
-                    <td className={styles.td}>Ação</td>
-                    <td className={styles.td}>Comedia</td>
-                    <td className={styles.td}>8</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>8</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>9</td>
-                    <td className={styles.td}>10</td>
-                    <td className={styles.td}>9,5</td>
-                    <td className={styles.td}></td>
-                </tr>
+                {meusFilmes
+                .filter(filme => filme.anoDeLancamento <= anoAtual)
+                .sort((a, b) => b.media - a.media)
+                .map((filme, index) => (
+                    <LerFilme key={index} id={index + 1 + "º"} nomeFilme={filme.nomeDoFilme} anoDeLancamento={filme.anoDeLancamento} oneGenero={filme.oneGenero} twoGenero={filme.twoGenero}historiaP1={filme.historiaP1} atuacaoP1={filme.atuacaoP1} roteiroP1={filme.roteiroP1} efeitosP1={filme.efeitosP1} trilhaP1={filme.trilhaP1}historiaP2={filme.historiaP2} atuacaoP2={filme.atuacaoP2} roteiroP2={filme.roteiroP2} efeitosP2={filme.efeitosP2} trilhaP2={filme.trilhaP2} media={filme.media}/>
+                ))}
             </tbody>
         </table>
     )

@@ -1,0 +1,65 @@
+{
+  "meusFilmes": [],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Animação"
+    },
+    {
+      "id": "2",
+      "name": "Ação"
+    },
+    {
+      "id": "3",
+      "name": "Aventura"
+    },
+    {
+      "id": "4",
+      "name": "Comédia"
+    },
+    {
+      "id": "5",
+      "name": "Crime"
+    },
+    {
+      "id": "6",
+      "name": "Documentário"
+    },
+    {
+      "id": "7",
+      "name": "Drama"
+    },
+    {
+      "id": "8",
+      "name": "Esporte"
+    },
+    {
+      "id": "9",
+      "name": "Ficção"
+    },
+    {
+      "id": "10",
+      "name": "Fantasia"
+    },
+    {
+      "id": "11",
+      "name": "Guerra"
+    },
+    {
+      "id": "12",
+      "name": "Mistério"
+    },
+    {
+      "id": "13",
+      "name": "Romance"
+    },
+    {
+      "id": "14",
+      "name": "Suspense"
+    },
+    {
+      "id": "15",
+      "name": "Terror"
+    }
+  ]
+}
