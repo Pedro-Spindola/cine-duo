@@ -22,7 +22,7 @@ function LerFilme({id, nomeFilme, anoDeLancamento, oneGenero, twoGenero, histori
             return valor5;
         } else if(media >= 7.5 && media <= 8.7){
             return valor6;
-        } else if(media > 8.8 && media <= 10){
+        } else if(media >= 8.8 && media <= 10){
             return valor7;
         }else{
             return ;

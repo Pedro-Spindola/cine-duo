@@ -280,6 +280,28 @@ function Filmes(){
         setMessage({ msg: '', type: '', vis: ''});
     };
 
+    const [nomePessoas, setNomePessoas] = useState({ pessoaOne: "", pessoaTwo: "" });
+
+    useEffect(() => {
+        fetch('http://localhost:5000/user/1', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(resp => resp.json())
+        .then(data => {
+            // Atualiza o estado nomePessoas com os dados obtidos do servidor
+            setNomePessoas({
+                pessoaOne: data.pessoaOne,
+                pessoaTwo: data.pessoaTwo
+            });
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    }, []);
+
     return (
         <main className={styles.main}>
             {message && <Message msg={message.msg} type={message.type} vis={message.vis} clearMessage={clearMessage}></Message>}
@@ -307,7 +329,7 @@ function Filmes(){
                         <div className={styles.topico}>
                             <h2>Nota para as categorias:</h2>
                             <div className={styles.dadosTopico1}>
-                                <h2>Pessoa 1</h2>
+                                <h2>{`${nomePessoas.pessoaOne}, informe suas notas...`}</h2>
                                 <Input textoLabel="História: " tipo="text" id="historiaP1" placeholder="Nota..." value={dadosFilme.historiaP1} handleOnChange={handleChangeNotas}/>
                                 <Input textoLabel="Atuação: " tipo="text" id="atuacaoP1" placeholder="Nota..." value={dadosFilme.atuacaoP1} handleOnChange={handleChangeNotas}/>
                                 <Input textoLabel="Roteiro: " tipo="text" id="roteiroP1" placeholder="Nota..." value={dadosFilme.roteiroP1} handleOnChange={handleChangeNotas}/>
@@ -315,7 +337,7 @@ function Filmes(){
                                 <Input textoLabel="Trilha: " tipo="text" id="trilhaP1" placeholder="Nota..." value={dadosFilme.trilhaP1} handleOnChange={handleChangeNotas}/>
                             </div>
                             <div className={styles.dadosTopico2}>
-                                <h2>Pessoa 2</h2>
+                            <h2>{`${nomePessoas.pessoaTwo}, informe suas notas...`}</h2>
                                 <Input textoLabel="História: " tipo="text" id="historiaP2" placeholder="Nota..." value={dadosFilme.historiaP2} handleOnChange={handleChangeNotas}/>
                                 <Input textoLabel="Atuação: " tipo="text" id="atuacaoP2" placeholder="Nota..." value={dadosFilme.atuacaoP2} handleOnChange={handleChangeNotas}/>
                                 <Input textoLabel="Roteiro: " tipo="text" id="roteiroP2" placeholder="Nota..." value={dadosFilme.roteiroP2} handleOnChange={handleChangeNotas}/>
@@ -325,6 +347,7 @@ function Filmes(){
                         </div>
                         <div className={styles.lineOpcoes}>
                             <button className={styles.btnOpcoes} onClick={handleSubmit} >Adicionar</button>
+                            <button className={styles.btnOpcoes} onClick={limparInput}>Limpar</button>
                         </div>
                         
                     </div>

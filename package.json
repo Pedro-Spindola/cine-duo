@@ -1,4 +1,5 @@
 {
+  "homepage": "https://pedro-spindola.github.io/cine-duo",
   "name": "cine-duo",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,9 @@
     "backend": "json-server --watch db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "nodemon": "^3.1.4"
   }
 }

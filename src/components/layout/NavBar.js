@@ -42,6 +42,6 @@ function NavBar(){
                 </div>
             </Container>
         </nav>
-    )
+    );
 }
 export default NavBar;

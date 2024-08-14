@@ -1,11 +1,11 @@
 
 
-function InputNumber({ textoLabel, tipo, id, placeholder, value, handleOnChange}) {
+function InputNumber({ textoLabel, tipo, id, placeholder, value, handleOnChange, styleInput, styleLabel}) {
 
     return(
         <>
-            <label>{textoLabel}</label>
-            <input type={tipo} name={id} id={id} placeholder={placeholder} value={value} onChange={handleOnChange}></input>
+            <label className={styleLabel} >{textoLabel}</label>
+            <input className={styleInput} type={tipo} name={id} id={id} placeholder={placeholder} value={value} onChange={handleOnChange}></input>
         </>
     )
 }
