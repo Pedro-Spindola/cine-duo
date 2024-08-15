@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cine-duo/static/css/main.13f2453b.css",
+    "main.js": "/cine-duo/static/js/main.1fc37400.js",
+    "static/media/lixeira.svg": "/cine-duo/static/media/lixeira.c50d001c0c5fe26f0cbedca95d07d160.svg",
+    "static/media/editar.svg": "/cine-duo/static/media/editar.05a4c03302d98405b9909a67412be438.svg",
+    "index.html": "/cine-duo/index.html",
+    "static/media/bars-solid.svg": "/cine-duo/static/media/bars-solid.1bed079711edbaa1ad3bc27490e7c3dc.svg",
+    "main.13f2453b.css.map": "/cine-duo/static/css/main.13f2453b.css.map",
+    "main.1fc37400.js.map": "/cine-duo/static/js/main.1fc37400.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13f2453b.css",
+    "static/js/main.1fc37400.js"
+  ]
+}
